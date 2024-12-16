@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT 
 pragma solidity ^0.8.28;
 
-contract HooslingCampaign {
+contract CrowdFunding {
     
     struct Campaign {
         uint id;
@@ -16,7 +16,9 @@ contract HooslingCampaign {
 
     struct Contribution {
         address donor;
+        uint projectId;
         uint amount;
+
     }
 
     mapping(uint => Campaign) public campaigns;
