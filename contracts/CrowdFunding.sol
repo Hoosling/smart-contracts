@@ -18,7 +18,6 @@ contract CrowdFunding {
         address donor;
         uint projectId;
         uint amount;
-
     }
 
     mapping(uint => Campaign) public campaigns;
@@ -31,6 +30,4 @@ contract CrowdFunding {
     event DonationReceived(uint indexed campaignId, address indexed donor, uint amount);
     event FundsWithdrawn(uint indexed campaignId, address indexed creator, uint amount);
     event RefundIssued(uint indexed campaignId, address indexed donor, uint amount);
-    
-
 }
